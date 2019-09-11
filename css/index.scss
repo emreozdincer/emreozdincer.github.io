@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700,900|Montserrat:400,600&display=swap');
+
+html {
+  max-height: 100vh;
+  font-family: 'Frank Ruhl Libre', serif;
+  --primary-dark: #540c3f;
+  --primary: #68013F;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 1;
+  text-align: center;
+  margin-top: 35vh;
+
+  h1 {
+    color: var(--primary-dark);
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block; // prevents scroll
+}
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  max-width: 100%;
+  white-space: nowrap;
+  word-break: keep-all;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.button-portfolio {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  background-color: rgb(84, 12, 63);
+  border-radius: 100px;
+  padding: 0 25px;
+
+  &:hover {
+    background-color: rgb(104,1,63);
+    opacity: .8;
+  }
+}
+
+.icons-row {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  background: rgba(104, 1, 63, 0.1);
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  width: 38px;
+  border-radius: 19px;
+  font-family: 'Montserrat', sans-serif;
+}
