@@ -107,5 +107,33 @@ body {
   width: 38px;
   border-radius: 19px;
   font-family: 'Montserrat', sans-serif;
+  margin: 0 .2em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon:hover {
+  background: rgba(104, 1, 63, 0.8);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.linkedin {
+  background-image: url("../assets/linkedin-purple.svg");
+}
+
+.linkedin:hover {
+  background-image: url("../assets/linkedin-white.svg");
+}
+
+.github {
+  background-image: url("../assets/github-purple.svg");
+  background-size: 50%;
+}
+
+.github:hover {
+  background-image: url("../assets/github-white.svg");
+  background-size: 50%;
 }
 /*# sourceMappingURL=index.css.map */
