@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700,900|Montserrat:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Philosopher:400,700&display=swap");
 html {
   max-height: 100vh;
-  font-family: 'Frank Ruhl Libre', serif;
+  --display-font:'Philosopher', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
   --primary-dark: #540c3f;
   --primary: #68013F;
 }
@@ -19,34 +20,46 @@ body {
   display: flex;
 }
 
-.left-column {
+.section-background {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.right-column {
+.section-info {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  margin-top: 35vh;
 }
 
-.right-column h1 {
+.section-info h1 {
+  font-family: var(--display-font);
   color: var(--primary-dark);
   font-weight: 900;
-  font-size: 60px;
-  line-height: 50px;
+  font-size: 50px;
+  line-height: 45px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.right-column p {
+.section-info p {
   color: var(--primary);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  line-height: 22px;
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 18px;
   margin-top: 10px;
 }
 
@@ -59,14 +72,9 @@ body {
 }
 
 .button {
-  font-family: 'Montserrat', sans-serif;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-family: var(--body-font);
+  display: block;
   cursor: pointer;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   max-width: 100%;
   white-space: nowrap;
   word-break: keep-all;
@@ -74,14 +82,20 @@ body {
   overflow: hidden;
 }
 
+.button a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 .button-portfolio {
   color: white;
-  font-size: 16px;
   font-weight: 600;
+  font-size: 14px;
+  height: 40px;
   line-height: 40px;
-  background-color: #540c3f;
   border-radius: 100px;
   padding: 0 25px;
+  background-color: #540c3f;
 }
 
 .button-portfolio:hover {
@@ -106,7 +120,7 @@ body {
   text-align: center;
   width: 38px;
   border-radius: 19px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--body-font);
   margin: 0 .2em;
   background-repeat: no-repeat;
   background-position: center;
@@ -135,5 +149,33 @@ body {
 .github:hover {
   background-image: url("../assets/github-white.svg");
   background-size: 50%;
+}
+
+@media only screen and (max-width: 980px) {
+  .page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .background-image {
+    height: 50vh;
+    -o-object-position: 50% 70%;
+       object-position: 50% 70%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .section-info h1 {
+    padding: 0 20px;
+    font-size: 30px;
+    line-height: 24px;
+  }
+  .section-info p {
+    font-size: 14px;
+  }
+  .button {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

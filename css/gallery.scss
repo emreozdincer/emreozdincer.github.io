@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Philosopher:400,700&display=swap');
+
+html {
+  // max-height: 100vh;
+
+  --display-font: 'Philosopher', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --primary-dark: #540c3f;
+  --primary: #68013F;
+
+  font-family: var(--body-font);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-wrapper {
+  position: sticky;
+  padding: 15px 3%; // apply horizontal value to nav's left as well
+  top: 0;
+  background: white;
+}
+
+.header {
+  font-family: var(--display-font);
+  color: var(--primary-dark);
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav {
+  position: absolute;
+  left: 3%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    font-size: 18px;
+    padding-right: 20px;
+
+    &.selected {
+      font-weight: 700;
+    }
+  }
+}
+
+.projects {
+  margin: 3%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  flex: 1;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  margin-top: 10vh;
+
+  // &:hover {
+  //   cursor: pointer;
+  // }
+}
+
+.project-one {
+}
+
+.project-two {
+}

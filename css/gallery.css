@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Philosopher:400,700&display=swap");
+html {
+  --display-font: 'Philosopher', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --primary-dark: #540c3f;
+  --primary: #68013F;
+  font-family: var(--body-font);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 15px 3%;
+  top: 0;
+  background: white;
+}
+
+.header {
+  font-family: var(--display-font);
+  color: var(--primary-dark);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 30px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav {
+  position: absolute;
+  left: 3%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+nav li.selected {
+  font-weight: 700;
+}
+
+.projects {
+  margin: 3%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 10vh;
+}
+/*# sourceMappingURL=gallery.css.map */
